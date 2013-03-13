@@ -615,10 +615,15 @@ a.thumbnail:hover {
  PUT HERE YOUR THEME BASED CSS: [INHERITED from bootstrap-responsive.css]
  ============================================================================
 */
+
 @media (max-width: 767px) {
 }
 
 @media (min-width: 768px) {
+}
+
+.modal.fade.in {
+  top: 50%;
 }
 
 
