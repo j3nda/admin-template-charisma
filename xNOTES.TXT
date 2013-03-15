@@ -1,4 +1,13 @@
 =======================================
+THEMES:
+	- ORIGINAL: charisma's:
+		cerulean, classic, cyborg, journal, redy, simplex, slate, spacelab, united
+
+	- MINE: s2's
+		s2
+		zatebou
+
+=======================================
 login:
 	- flash messages:
 		- put some javascript functionality to fade and move through layers...
