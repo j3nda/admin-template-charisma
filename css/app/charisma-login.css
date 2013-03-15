@@ -23,9 +23,14 @@
 	height: 240px;
 	position: relative;
 	z-index: 1;
-          box-shadow: 20px 20px 35px 0px #ccc;
-     -moz-box-shadow: 20px 20px 35px 0px #ccc;
-  -webkit-box-shadow: 20px 20px 35px 0px #ccc;
+          box-shadow: 20px 20px 35px 0px #646464;
+     -moz-box-shadow: 20px 20px 35px 0px #646464;
+  -webkit-box-shadow: 20px 20px 35px 0px #646464;
+}
+
+
+.login-box #remember-forgot {
+  width: 100%;
 }
 
 

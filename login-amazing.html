@@ -66,8 +66,8 @@
 				</div><!--/span-->
 			</div><!--/row-->
 			<div class="row-fluid">
-				<div id="flash-messages" class="center" style="width:50%;">
-					<div class="center alert alert-success">[alert alert-success]: Success flash message...</div>
+				<div id="flash-messages" class="center" style="width:50%;xvisibility:hidden;">
+					<div id="xxx" class="center alert alert-success">[alert alert-success]: Success flash message...</div>
 					<div class="center alert alert-info">[alert alert-info]: Success flash message...</div>
 					<div class="center alert alert-danger">[alert alert-danger]: Success flash message...</div>
 					<div class="center alert alert-error">[alert alert-error]: Success flash message...</div>
@@ -77,23 +77,6 @@
 						<div class="center alert alert-warning"><a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a> is <u>required</u> for proper operation of this site.</div>
 				</div></noscript>
 				<div class="well center login-box" style="visibility:hidden;">
-<!--
-					NOTE: some welcome text... uncoment this if you want and update {width|height} of ".login-box" in: css/<theme-name>/app-charisma.css
-					<div class="alert alert-info">
-						Please login with your Username and Password.
-					</div>
--->
-<!--
-
-					<div class="center logo">
-						NOTE: uncoment this, if you want a logo on ".login-box". just prepare your app's logo, max-width: 368px; max-height: 258px; @see: css/<theme-name>/app-charisma.css
-
-						TODO: specify image dimensions: The following image(s) are missing a width and/or height.
-						NOTE: by chrome-audits: A width and height should be specified for all images in order to speed up page display.
-
-						<img src="img/charisma/logo.png" alt="" title="" width="" height="" />
-					</div>
--->
 					<form class="form-horizontal" action="index.html" method="post">
 						<fieldset>
 							<div class="input-prepend" title="Username" data-rel="tooltip">
@@ -111,7 +94,7 @@
 							</div>
 							<div class="clearfix"></div>
 
-							<div style="width:100%;">
+							<div id="remember-forgot">
 								<div class="remember">
 									<label for="remember"><input type="checkbox" id="remember" name="remember" />Remember me</label>
 								</div>

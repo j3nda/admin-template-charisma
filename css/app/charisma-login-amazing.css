@@ -18,7 +18,15 @@
  PUT HERE YOUR THEME BASED CSS: [INHERITED from app/charisma.css]
  ============================================================================
 */
+.login-box .form-horizontal {
+  margin-top: 25px;
+}
 
+
+.login-box #remember-forgot {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 
 
 /*
@@ -29,7 +37,7 @@
 
 body {
 	xbackground: url('../../img/charisma/login-amazing_bg.png') no-repeat center top fixed;
-	background-color: silver;
+	background-color: gray;
 
   /* css3 */
   -webkit-background-size: cover;
@@ -41,22 +49,6 @@ body {
   width: 100%;
   display: table;
 }
-
-/*.login-box .logo {
-	width: 100%;
-	height: 258px;
-	max-width: 368px;
-	max-height: 258px;
-	overflow: hidden;
-	margin-top: -17px;
-	position: absolute;
-	z-index: -1;
-}
-.login-box .logo img {
-	position: relative;
-	z-index: -1;
-}*/
-
 
 
 /* ===[ HEADER / environment switcher ]=================================== */
@@ -96,9 +88,9 @@ body {
 	        border-radius: 48px;
 	   -moz-border-radius: 48px;
 	-webkit-border-radius: 48px;
-          box-shadow: 2px 3px 3px 0px #ccc;
-     -moz-box-shadow: 2px 3px 3px 0px #ccc;
-  -webkit-box-shadow: 2px 3px 3px 0px #ccc;
+          box-shadow: 2px 3px 3px 0px #646464;
+     -moz-box-shadow: 2px 3px 3px 0px #646464;
+  -webkit-box-shadow: 2px 3px 3px 0px #646464;
 }
 
 .s2-env #environment dd ul li a {
