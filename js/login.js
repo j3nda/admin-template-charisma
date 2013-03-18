@@ -12,13 +12,16 @@ $(window).resize(function() {
 });
 
 
+/*
 function fadeToHelper(el, index, max, timing) {
 }
 function fadeInHelper(el, index, max, timing) {
+
 	// TODO: respect type of message!
 	// {success|info|danger|error}
 
 	el.css('visibility', '');
+
 	el.fadeIn(timing['in'], function() {
 		el.fadeTo(timing['to1'][0], timing['to1'][1], function() {
 
@@ -53,10 +56,33 @@ function fadeInHelper(el, index, max, timing) {
 				// TODO: hide
 				$(this).hide();
 			});
+
+			// flash messages (~fade{In|Out})
+			var fmsg = $('#flash-messages');
+
+			if (fmsg.html() != '' && fmsg.html() != null) {
+				var fmsg_cnt = $('#flash-messages div');
+				var fmsg_len = fmsg_cnt.size();
+				var fmsg_idx = el.attr('data-fm-index');
+
+				fmsg_cnt.each(function(indexx, valuee) {
+	console.log(index, index, fmsg_idx);
+					if (indexx == fmsg_idx+1) {
+						$(this).show();
+console.log($(this).val());
+						fadeInHelper($(this), index, max, timing);
+					}
+
+				});
+
+			}
+
 		});
+
+
 	});
 }
-
+*/
 
 $(document).ready(function() {
 	var backup = {
@@ -134,6 +160,7 @@ $(document).ready(function() {
 
 
 	// flash messages (~fade{In|Out})
+/*
 	var fmsg = $('#flash-messages');
 	if (fmsg.html() != '' && fmsg.html() != null) {
 		var fmsg_cnt = $('#flash-messages div');
@@ -145,6 +172,7 @@ $(document).ready(function() {
 			'to3': [   555, 0.0 ]
 		};
 		fmsg_cnt.each(function(index, value) {
+			$(this).attr('data-fm-index', index);
 			$(this).hide();
 			if (index == 0) {
 				fadeInHelper($(this), index, fmsg_len, timing);
@@ -152,7 +180,7 @@ $(document).ready(function() {
 		});
 		fmsg.css('visibility', '');
 	}
-
+*/
 	// TODO: fadeIn (prvni)
 	// TODO: fadeOut (prvni) -> complete -> presun ji nahoru a zobraz indikator
 	// TODO: po kliku na indikator -> presun zpet a zobraz ji -> fadeIn() a opakuj akce
@@ -161,6 +189,6 @@ $(document).ready(function() {
 //fmsgs.fadeOut(2000, function() {
 //});
 
-console.log(fmsg.html());
+//console.log(fmsg.html());
 
 });
