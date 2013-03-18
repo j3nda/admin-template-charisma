@@ -37,7 +37,8 @@
 
 body {
 	xbackground: url('../../img/charisma/login-amazing_bg.png') no-repeat center top fixed;
-	background-color: gray;
+	background: url('../../img/charisma/login-amazing_bg.jpg') no-repeat center center fixed;
+	xbackground-color: gray;
 
   /* css3 */
   -webkit-background-size: cover;
