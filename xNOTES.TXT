@@ -11,10 +11,10 @@ THEMES:
 login:
 	- flash messages:
 		- put some javascript functionality to fade and move through layers...
-	workin'	  #1 - flash msg
+	ok	  #1 - flash msg
 		  #2 - login-box
-	workin'	  #3 - after fade-out
-			- onmouseover on this flash msg in this layer will put flash msg back to #1
+	ok	  #3 - after fade-out
+	ok		- onmouseover on this flash msg in this layer will put flash msg back to #1
 		- put some shadow effect on the box
 
 	- [s2]: version info (version, build) - in some eye-candy way!
