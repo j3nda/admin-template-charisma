@@ -16,11 +16,14 @@ $(document).ready(function() {
 		$('#themes i').removeClass('icon-ok');
 		$(this).find('i').addClass('icon-ok');
 	});
-
-
-	function switch_theme(theme_name) {
-		$('#bs-css').attr('href','css/themes/'+theme_name+'/bootstrap.css');
-		$('#th-css').attr('href','css/themes/'+theme_name+'/app-charisma.css');
+	
+	function switch_theme(theme_name)
+	{
+		current_theme = $('#bs-css').attr('href');
+		new_theme = 'css/bootstrap-'+theme_name+'.css'; 
+		if (currentTheme != newTheme) {
+		        $('#bs-css').attr('href', new_theme);
+		}
 	}
 
 	// ajax menu checkbox
