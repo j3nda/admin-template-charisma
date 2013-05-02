@@ -20,9 +20,10 @@
 	<!-- The styles -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/themes/cerulean/bootstrap.css" rel="stylesheet" id="bs-css">
-	<link href="css/app-charisma.css" rel="stylesheet">
-	<link href="css/themes/cerulean/app-charisma.css" rel="stylesheet" id="th-css">
+	<link href="css/themes/s2/bootstrap.css" rel="stylesheet" id="bs-css">
+	<link href="css/app/charisma.css" rel="stylesheet">
+	<link href="css/app/charisma-login.css" rel="stylesheet">
+	<link href="css/themes/s2/app-charisma.css" rel="stylesheet" id="th-css">
 
 	<link href="css/3rd-party/jquery-ui-1.8.21.custom.css" rel="stylesheet">
 	<link href="css/3rd-party/chosen.css" rel="stylesheet">
@@ -59,6 +60,7 @@
 				</div>
 				<noscript><div class="well center" style="width:50%;">
 						<div class="center alert alert-error"><strong>FATAL:</strong> You have javascript turned off!</div>
+<<<<<<< HEAD
 						<div class="center alert alert-warning">Javascript is <u>required</u> for proper operation of this site.</div>
 				</div></noscript>
 				<div class="well center login-box" style="visibility:hidden;">
@@ -83,11 +85,24 @@
 						<fieldset>
 							<label for="username"><div class="input-prepend" title="Username" data-rel="tooltip">
 								<span class="add-on"><i class="icon-user"></i></span><input autofocus class="input-large span10" name="username" id="username" type="text" value="" placeholder="put username here." />
+=======
+						<div class="center alert alert-warning"><a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">Javascript</a> is <u>required</u> for proper operation of this site.</div>
+				</div></noscript>
+				<div class="well center login-box" style="visibility:hidden;">
+					<form class="form-horizontal" action="index.html" method="post">
+						<fieldset>
+							<label for="username"><div class="input-prepend" title="Username" data-rel="tooltip">
+							    <span class="add-on"><i class="icon-user"></i></span><input autofocus class="input-large span10" name="username" id="username" type="text" value="" placeholder="username" /></label>
+>>>>>>> develop-s2
 							</div></label>
 							<div class="clearfix"></div>
 
 							<label for="password"><div class="input-prepend" title="Password" data-rel="tooltip">
+<<<<<<< HEAD
 								<span class="add-on"><i class="icon-lock"></i></span><input class="input-large span10" name="password" id="password" type="password" value="" placeholder="put password here." />
+=======
+								<span class="add-on"><i class="icon-lock"></i></span><input class="input-large span10" name="password" id="password" type="password" placeholder="password" />
+>>>>>>> develop-s2
 							</div></label>
 							<div class="clearfix"></div>
 
@@ -96,7 +111,7 @@
 							</div>
 							<div class="clearfix"></div>
 
-							<div style="width:100%;">
+							<div id="remember-forgot">
 								<div class="remember">
 									<label for="remember"><input type="checkbox" id="remember" name="remember" />Remember me</label>
 								</div>
