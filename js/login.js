@@ -86,15 +86,11 @@ console.log($(this).val());
 
 $(document).ready(function() {
 	var backup = {
-<<<<<<< HEAD
-		'login': $('fieldset #login').html()
-=======
 		'login'   : $('fieldset #login').html(),
 		'forgotem': false,//		fmsgs.each(function(index) {
 //			$(this).fadeIn(500);
 //console.log(index + ": " + $(this).text());
 		//});
->>>>>>> develop-s2
 	};
 	$('.login-box').center();
 	$('.login-box').css('visibility', '');
