@@ -62,6 +62,8 @@ $(document).ready(function() {
 				$('#content').html($(msg).find('#content').html());
 				$('#loading').remove();
 				$('#content').fadeIn();
+				var newTitle = $(msg).filter('title').text();
+				$('title').text(newTitle);
 				docReady();
 			}
 		});
