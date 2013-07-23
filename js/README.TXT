@@ -47,7 +47,7 @@ LIST * LIST * LIST * LIST * LIST * LIST * LIST * LIST * LIST * LIST * LIST
 		jquery.uploadify-3.1.min.js
 
 
-	charisma.js	= used by all charisma-template
+	charisma.js	= used by all charisma-templates
 	login.js	= used by login.html only!
 
 	README.TXT	= this readme file
