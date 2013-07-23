@@ -12,3 +12,4 @@
     * cherry-pick
         @see ?and/or? @todo: https://github.com/aaronrothschild/charisma/commit/ca9b9c7be499a6152fe7e9631483635c4e40efee
                              https://github.com/aaronrothschild/charisma/commit/115ac8cb6062666c11158dc63b2e28c1d7d002fa
+        @note: i have better bugfix, then, just a note here: https://github.com/COil/charisma/commit/07d2dfdcf0e246fe188827883a512e56567d8d69
