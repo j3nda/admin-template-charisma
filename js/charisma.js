@@ -16,15 +16,24 @@ $(document).ready(function() {
 		$('#themes i').removeClass('icon-ok');
 		$(this).find('i').addClass('icon-ok');
 	});
-	
-	function switch_theme(theme_name)
-	{
-		current_theme = $('#bs-css').attr('href');
-		new_theme = 'css/bootstrap-'+theme_name+'.css'; 
-		if (currentTheme != newTheme) {
-		        $('#bs-css').attr('href', new_theme);
+
+
+	function switch_theme(theme_name) {
+		theme_current = [
+			$('#bs-css').attr('href'), // current: bootstrap   theme
+			$('#th-css').attr('href')  // current: application theme
+		];
+		theme_new = [
+			'css/themes/'+theme_name+'/bootstrap.css',
+			'css/themes/'+theme_name+'/app-charisma.css'
+		];
+		
+		if (theme_current[0] != theme_new[0]) {
+			$('#bs-css').attr('href', theme_new[0]);
+			$('#th-css').attr('href', theme_new[1]);
 		}
 	}
+
 
 	// ajax menu checkbox
 	$('#is-ajax').click(function(e) {
