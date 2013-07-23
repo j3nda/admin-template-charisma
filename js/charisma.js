@@ -57,8 +57,6 @@ $(document).ready(function() {
 		$.ajax({
 			url:State.url,
 			success:function(msg){
-				var newTitle = $(msg).filter('title').text();
-				window.document.title = newTitle;
 				$('#content').html($(msg).find('#content').html());
 				$('#loading').remove();
 				$('#content').fadeIn();
